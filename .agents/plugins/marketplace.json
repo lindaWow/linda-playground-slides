@@ -1,0 +1,20 @@
+{
+  "name": "linda-playground-slides",
+  "interface": {
+    "displayName": "Linda Playground slides"
+  },
+  "plugins": [
+    {
+      "name": "linda-playground-slides",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
