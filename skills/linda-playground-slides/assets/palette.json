@@ -1,0 +1,18 @@
+{
+  "source": "https://exat.hottype.co/",
+  "tokens": {
+    "blue-03": "#0000CB", "blue-02": "#2546FF", "blue-01": "#5C92FF", "blue-00": "#BEEEFF",
+    "yellow-01": "#FFCE2E", "yellow-02": "#FFAE00", "orange-01": "#FF6200", "red-01": "#FF0B00",
+    "pink": "#FF98FB", "green": "#1C7511", "black": "#1C1D1E", "white": "#EEEFEB"
+  },
+  "presets": {
+    "neutral-orange": ["black", "white", "orange-01"],
+    "electric-yellow": ["black", "white", "blue-02", "yellow-01"],
+    "pink-blue": ["black", "white", "pink", "blue-03"],
+    "red-ice": ["black", "white", "red-01", "blue-00"],
+    "editorial-multi": ["black", "white", "blue-02", "yellow-01", "pink", "green", "orange-01"],
+    "full": ["blue-03", "blue-02", "blue-01", "blue-00", "yellow-01", "yellow-02", "orange-01", "red-01", "pink", "green", "black", "white"]
+  },
+  "disjoint_demo_surface_pairs": [["blue-03", "yellow-01"], ["pink", "green"], ["blue-02", "orange-01"], ["blue-00", "red-01"], ["blue-01", "yellow-02"], ["white", "black"]],
+  "rule": "Set foreground to the better contrast of black and white for every surface state. Re-evaluate adjacency when changing layout or palette."
+}
