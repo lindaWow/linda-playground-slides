@@ -1,0 +1,14 @@
+interface:
+  display_name: Linda Playground slides
+  short_description: 把文字变成富含实验排版、鲜明撞色与动态交互的 HTML Slides
+  default_prompt: 使用 $linda-playground-slides，把以下内容制作成 Linda Playground slides 风格的交互式
+    HTML 演示，提炼信息层级，加入动态字体和组件效果，并内嵌字体与资源。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
