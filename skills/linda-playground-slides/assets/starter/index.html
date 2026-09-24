@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>文字交互叙事 · 组件起点</title>
+  <link rel="stylesheet" href="kinetic.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到内容</a>
+  <header class="site-bar">
+    <a href="#intro" class="brand">TYPE / PLAY</a>
+    <nav aria-label="章节"><a href="#map">目录</a><a href="#lab">体验</a></nav>
+    <button type="button" class="motion-toggle" data-motion-toggle aria-pressed="false">暂停动态</button>
+  </header>
+  <main id="main">
+    <section class="scene cover" id="intro" data-scene data-surface="white">
+      <div class="eyebrow"><span>00 / 文字与体验</span><span>可操作组件示例</span></div>
+      <div class="cover-layout">
+        <div>
+          <h1 class="display"><span class="phrase" data-split="reveal">让文字</span><span class="phrase" data-split="reveal">成为体验。</span></h1>
+          <p class="lede">先让重点被看见，再让细节被发现。</p>
+          <a class="button" href="#map" data-magnetic><span data-magnetic-inner>进入内容 <span aria-hidden="true">↘</span></span></a>
+        </div>
+        <div class="type-lab" data-type-lab data-surface="blue-02">
+          <span class="micro">VARIABLE TYPE / 拖动试试</span>
+          <div class="type-stage"><span class="type-sample" data-type-sample>TYPE</span></div>
+          <label>字重 <output data-axis-output="wght">600</output><input type="range" data-axis="wght" min="100" max="1000" value="600"></label>
+          <label>字宽 <output data-axis-output="wdth">95</output><input type="range" data-axis="wdth" min="25" max="151" value="95"></label>
+        </div>
+      </div>
+      <div class="scene-foot"><span>滑动探索 · 点击深入</span><svg class="rotor" aria-hidden="true" width="42" height="42" viewBox="0 0 40 40"><path fill="currentColor" d="M16 0h8v13l9-9 6 6-9 9h10v8H27l9 9-6 4-10-10L10 40l-6-6 10-10H0v-8h13L4 7l6-6 6 8z"/></svg></div>
+    </section>
+
+    <section class="scene" id="map" data-scene data-surface="pink">
+      <div class="eyebrow"><span>01 / 主流程</span><span>选择一个入口</span></div>
+      <h2 class="display compact" data-split="fold">由内容，决定形状。</h2>
+      <nav class="process" aria-label="体验流程">
+        <a href="#field"><small>01</small><span class="axis-word">感应</span><span aria-hidden="true">↗</span></a>
+        <a href="#orbit"><small>02</small><span class="axis-word">空间</span><span aria-hidden="true">↗</span></a>
+        <a href="#chapters"><small>03</small><span class="axis-word">层次</span><span aria-hidden="true">↗</span></a>
+        <a href="#lab"><small>04</small><span class="axis-word">操作</span><span aria-hidden="true">↗</span></a>
+      </nav>
+      <p class="lede">从全貌进入细节，也能随时返回。</p>
+      <div class="scene-foot"><span>每个节点都有真实去向</span><a class="text-link" href="#field">继续阅读 →</a></div>
+    </section>
+
+    <section class="scene" id="field" data-scene data-surface="blue-00">
+      <div class="eyebrow"><span>02 / 字体场</span><a href="#map">返回总览</a></div>
+      <div class="two-column">
+        <div><h2 class="display compact"><span data-velocity>每个字，</span><br>都有引力。</h2><p class="lede">移动指针，字重与色彩随距离变化。</p><button class="button" type="button" data-field-toggle="glyphs">切换字阵状态</button></div>
+        <div id="glyphs" class="glyph-field" data-glyph-field="Aa" aria-label="可响应指针的装饰字阵"></div>
+      </div>
+      <div class="scene-foot"><span>触屏可以点击按钮</span><a href="#orbit">下一场景 →</a></div>
+    </section>
+
+    <section class="scene" id="orbit" data-scene data-surface="black">
+      <div class="eyebrow"><span>03 / 文字空间</span><a href="#map">返回总览</a></div>
+      <h2 class="display compact outline-swap" tabindex="0">把视角，打开。</h2>
+      <div class="ring-frame" data-ring>
+        <ul class="ring-source"><li>文字 / TYPE</li><li>秩序 / ORDER</li><li>形状 / FORM</li><li>色彩 / COLOR</li><li>空间 / SPACE</li><li>节奏 / RHYTHM</li></ul>
+      </div>
+      <div class="scene-foot"><span>标签随滚动转动</span><a href="#chapters">下一场景 →</a></div>
+    </section>
+
+    <section class="scene" id="chapters" data-scene data-surface="yellow-01">
+      <div class="eyebrow"><span>04 / 内容层次</span><a href="#map">返回总览</a></div>
+      <h2 class="display compact" data-split="reveal">有重点，也有深度。</h2>
+      <div class="reveal-grid">
+        <button class="tile" data-open="reading-notes" data-surface="blue-03" data-hover-surface="yellow-01"><small>01 / 主题</small><strong>看见重点</strong><span>阅读编排方法 ↗</span></button>
+        <button class="tile" data-open="reading-notes" data-surface="pink" data-hover-surface="green"><small>02 / 关系</small><strong>建立结构</strong><span>阅读编排方法 ↗</span></button>
+        <button class="tile" data-open="reading-notes" data-surface="blue-02" data-hover-surface="orange-01"><small>03 / 节奏</small><strong>留出停顿</strong><span>阅读编排方法 ↗</span></button>
+        <button class="tile" data-open="reading-notes" data-surface="blue-00" data-hover-surface="red-01"><small>04 / 深度</small><strong>点击深入</strong><span>阅读编排方法 ↗</span></button>
+        <button class="tile" data-open="reading-notes" data-surface="blue-01" data-hover-surface="yellow-02"><small>05 / 操作</small><strong>即时反馈</strong><span>阅读编排方法 ↗</span></button>
+        <button class="tile" data-open="reading-notes" data-surface="white" data-hover-surface="black"><small>06 / 收束</small><strong>回到内容</strong><span>阅读编排方法 ↗</span></button>
+      </div>
+      <div class="scene-foot"><span>同级信息最终对齐，共同可见</span><a href="#lab">下一场景 →</a></div>
+    </section>
+
+    <section class="scene" id="lab" data-scene data-surface="white">
+      <div class="eyebrow"><span>05 / 操作现场</span><a href="#map">返回总览</a></div>
+      <h2 class="display compact">把一句话，变成画面。</h2>
+      <div class="browser-window" data-tilt>
+        <div class="window-bar"><span aria-hidden="true">● ● ●</span><span>本地交互演示</span><span>HTML</span></div>
+        <form class="chat-demo" data-chat-demo>
+          <div class="chat-controls"><label for="idea">写下一个短句</label><textarea id="idea" name="idea" rows="3" maxlength="32">下一种可能</textarea><button class="button" type="submit">生成版式 ↗</button><p class="micro">本地排版演示，不发送数据。</p></div>
+          <div class="chat-preview" data-surface="orange-01"><span class="micro">LIVE PREVIEW</span><p data-preview-text aria-live="polite">下一种可能</p><span data-demo-status>等待你的文字</span></div>
+        </form>
+      </div>
+      <details class="fold-panel"><summary>为什么让用户亲手操作？</summary><p>用一个明确的输入与即时反馈解释概念；复杂方法和参考材料保留在可打开的内容层。</p></details>
+      <div class="scene-foot"><span>输入 → 操作 → 反馈</span><a href="#finish">继续 →</a></div>
+    </section>
+
+    <section class="scene ending" id="finish" data-scene data-surface="green">
+      <div class="eyebrow"><span>06 / 留下一个问题</span><a href="#map">返回总览</a></div>
+      <h2 class="display" data-split="fold">下一句，<br>你想说什么？</h2>
+      <div class="marquee" aria-hidden="true"><div class="marquee-track"><span>TYPE · FORM · PLAY · </span><span>TYPE · FORM · PLAY · </span></div></div>
+      <div class="scene-foot"><span>文字是起点。</span><a href="#intro" class="button">回到开始 ↑</a></div>
+    </section>
+  </main>
+
+  <dialog id="reading-notes" aria-labelledby="reading-notes-title">
+    <div class="dialog-top"><span>内容的第二层</span><form method="dialog"><button class="button" autofocus>关闭 ×</button></form></div>
+    <div class="dialog-content"><h2 id="reading-notes-title">让信息有层次</h2><ol><li>主画面先给出一个清楚的判断。</li><li>用网格、对照或流程解释关系。</li><li>把方法、清单和参考保存在可点击的细节层。</li></ol><p>这些是组件示例。制作新内容时，替换为对应的实用方法与资料。</p><p><a href="https://exat.hottype.co/" target="_blank" rel="noopener noreferrer">视觉参考：EXAT ↗</a></p></div>
+  </dialog>
+  <script src="kinetic.js" defer></script>
+</body>
+</html>
