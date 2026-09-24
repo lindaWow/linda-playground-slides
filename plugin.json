@@ -1,0 +1,38 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "linda-playground-slides",
+  "version": "1.0.0",
+  "description": "Turn outlines, talks, lessons, and long-form text into richly interactive, typography-led HTML presentations.",
+  "author": {
+    "name": "Linda",
+    "url": "https://github.com/lindaWow"
+  },
+  "homepage": "https://github.com/lindaWow/linda-playground-slides",
+  "repository": "https://github.com/lindaWow/linda-playground-slides",
+  "keywords": [
+    "interactive-slides",
+    "html-presentation",
+    "kinetic-typography",
+    "scroll-storytelling",
+    "vibe-coding"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Linda Playground slides",
+        "shortDescription": "把文字变成富含实验排版、鲜明撞色与动态交互的 HTML Slides",
+        "longDescription": "将提纲、课程、演讲和长文整理成信息层级清晰、详略得当、支持渐进式披露和响应式布局的交互式 HTML 演示，并可导出字体与效果内置的单文件。",
+        "developerName": "Linda",
+        "category": "Productivity",
+        "defaultPrompt": [
+          "使用 Linda Playground slides，把以下内容制作成交互式 HTML 演示。",
+          "把这份演讲提纲转化为富含动态字体和组件互动的网页 Slides。",
+          "Use Linda Playground slides to turn this outline into a responsive, interactive HTML presentation."
+        ],
+        "brandColor": "#FF6200",
+        "composerIcon": "./skills/linda-playground-slides/assets/icon.svg",
+        "logo": "./skills/linda-playground-slides/assets/icon.svg"
+      }
+    }
+  }
+}
